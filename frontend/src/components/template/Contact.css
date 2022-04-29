@@ -1,0 +1,29 @@
+.contact {
+    grid-area: contact;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    align-items: center;
+    
+}
+
+.contact > span {
+    color: gray;
+}
+
+.icon {
+    color: gray;
+    margin-right: 5px;
+    margin-left: 50px;
+}
+
+@media(max-width: 768px) {
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin: 0px 0px 0px 10px;
+    }
+}

@@ -1,0 +1,26 @@
+O primeiro passo é preencher o .env com o ip da máquina. As demais variáveis foram fixadas por motivo de simplificação.
+
+IP_LOCALHOST = "{seu ip}"
+
+Para iniciar a aplicação é necessário buildar os Dockerfiles das duas aplicações.
+
+Entrando na pasta "backend" será encontrado seu arquivo Dockerfile.
+
+    Backend 
+        $ docker build -t backend .
+
+Entrando na pasta "frontend" será encontrado seu arquivo Dockerfile.
+
+    Frontend 
+        $ docker build -t frontend .
+
+Em seguida, no diretório raiz "telefonia-telzir", será encontrado o docker-compose.yml
+
+    O docker-compose é composto pelos services: mysql, backend e frontend.
+
+    Para subir o docker-compose:
+        $ docker-compose up
+
+O backend pode ser acessado em: localhost:3050
+O webserver se encontra na url: localhost:3000
+    

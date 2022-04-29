@@ -1,0 +1,184 @@
+.cardCallValue {
+    width: 850px;
+    height: 450px;
+    background-color: #F8D210;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 55px 350px;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "title title title" 
+    "calc equal res";
+}
+
+.calc {
+    grid-area: calc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 350px;
+}
+
+.DDD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px gray;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 15px;
+}
+
+.titleCard{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.titleCard > span.title {
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+div.bar {
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+.destOrigin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comboboxDDD {
+    margin: 10px;
+}
+
+.comboboxDDD > select {
+    margin: 0px 10px;
+}
+
+.arrowImg {
+    width: 50px;
+    height: 50px;
+}
+
+.callTime {
+     display: flex;
+     flex-direction: column;
+     margin: 15px 0px;
+     padding: 15px 45px;
+     border: solid 1px gray;
+     background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     border-radius: 10px;
+}
+
+.callTime > input {
+    outline: 0;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    padding: 15px 45px;
+    border: solid 1px gray;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.equal {
+    grid-area: equal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equal > img {
+    width: 50px;
+    height: 50px;
+}
+
+.res {
+    grid-area: res;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resCard {
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    margin: 10px 0px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resCard > p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cardRes {
+    margin-top: 5px;
+}
+
+.cardRes > span {
+    font-size: 1.8rem;
+}
+
+@media(max-width: 768px) {
+    .cardCallValue {
+        width: 350px;
+        height: 880px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title" 
+        "calc"
+        "equal"
+        "res";
+    }
+
+    .titleCard {
+        height: 72px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titleCard > span.title {
+        justify-content: center;
+        align-items: center;
+        text-align-last: center;
+    }
+
+    .form {
+        width: 320px;
+    }
+}

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 80px 1fr 30px;
+  grid-template-areas: 
+    "contact"
+    "header"
+    "content"
+    "footer";
+  height: 100vh;
+}
