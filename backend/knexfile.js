@@ -1,7 +1,8 @@
+require('dotenv').config()
 module.exports = {
     client: 'mysql2',
     connection: {
-      host: '172.20.32.1',
+      host: process.env.IP_LOCALHOST,
       port: 3310,
       user: 'root',
       password: '987412365',
